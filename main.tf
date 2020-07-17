@@ -2,7 +2,7 @@
 #       key_name        = "aprilkey"
 #       public_key      = file(var.path_to_public_key)
 # } 
-#"arn:aws:sns:eu-west-1:941743414580:Signup-test"
+# FLASK_APP=application.py AWS_REGION=eu-xxxx-1 STARTUP_SIGNUP_TABLE=dynamo_db NEW_SIGNUP_TOPIC=arn:aws:sns:eu-west-1:xxxxxxxx:sxxxxxxxxx flask run --host 0.0.0.0
 
 resource "aws_instance" "myuserdata" {
     instance_type               = "t2.micro"

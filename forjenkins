@@ -19,8 +19,8 @@ pipeline {
                 SIGNUP_TOPIC = "arn:aws:dynamodb:eu-west-1:669916051179:table/data-dynamodb"
             }
          steps {
-            sh 'cd june2020_singup_project; sudo pip install -r requirements.txt || true; FLASK_APP=application.py AWS_REGION=eu-west-1 STARTUP_SIGNUP_TABLE=sig-db NEW_SIGNUP_TOPIC=$SIGNUP_TOPIC flask run --host 0.0.0.0 &'
-         }
+            sh 'cd june2020_singup_project; sudo pip install -r requirements.txt || true; FLASK_APP=application.py AWS_REGION=eu-west-1 STARTUP_SIGNUP_TABLE=data-dynamodb NEW_SIGNUP_TOPIC=$SIGNUP_TOPIC flask run --host 0.0.0.0 &'
+         }    
       }
 
      
