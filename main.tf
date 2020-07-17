@@ -1,7 +1,8 @@
 #   resource "aws_key_pair" "aprilkey" {
 #       key_name        = "aprilkey"
 #       public_key      = file(var.path_to_public_key)
-# }
+# } 
+#"arn:aws:sns:eu-west-1:941743414580:Signup-test"
 
 resource "aws_instance" "myuserdata" {
     instance_type               = "t2.micro"
